@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Athul T V - Software engineer portfolio with projects, certifications, and technical skills."
+    />
+    <title>Athul TV | SOFTWARE ENGINEER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              base: "#09090b",
+              surface: "#121218",
+              border: "#23232e",
+              primary: "#6d7cff",
+              accent: "#00d9a5"
+            },
+            boxShadow: {
+              glow: "0 0 0 1px rgba(109,124,255,0.35), 0 12px 30px rgba(0,0,0,0.45)"
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-base text-zinc-100 antialiased selection:bg-primary/40">
+    <div class="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(109,124,255,0.14),transparent_35%),radial-gradient(circle_at_80%_10%,rgba(0,217,165,0.10),transparent_32%)]"></div>
+    <header class="sticky top-0 z-50 border-b border-border/70 bg-base/70 backdrop-blur-xl">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="#hero" class="brand-mark text-sm font-semibold tracking-[0.2em] text-zinc-200">ATHUL TV</a>
+        <button
+          id="menuBtn"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border text-zinc-300 transition hover:border-primary hover:text-white md:hidden"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span class="sr-only">Menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+        <ul class="hidden items-center gap-8 text-sm text-zinc-300 md:flex">
+          <li><a class="nav-link hover:text-white" href="#about">About</a></li>
+          <li><a class="nav-link hover:text-white" href="#skills">Skills</a></li>
+          <li><a class="nav-link hover:text-white" href="#projects">Projects</a></li>
+          <li><a class="nav-link hover:text-white" href="#experience">Experience</a></li>
+          <li><a class="nav-link hover:text-white" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="mobileMenu" class="hidden border-t border-border px-4 py-3 md:hidden">
+        <ul class="space-y-3 text-sm text-zinc-300">
+          <li><a class="nav-link block rounded-md px-2 py-1 hover:bg-surface hover:text-white" href="#about">About</a></li>
+          <li><a class="nav-link block rounded-md px-2 py-1 hover:bg-surface hover:text-white" href="#skills">Skills</a></li>
+          <li><a class="nav-link block rounded-md px-2 py-1 hover:bg-surface hover:text-white" href="#projects">Projects</a></li>
+          <li><a class="nav-link block rounded-md px-2 py-1 hover:bg-surface hover:text-white" href="#experience">Experience</a></li>
+          <li><a class="nav-link block rounded-md px-2 py-1 hover:bg-surface hover:text-white" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="relative mx-auto max-w-6xl px-4 pb-20 pt-12 sm:px-6 lg:px-8">
+      <section id="hero" class="reveal mb-20 min-h-[70vh] scroll-mt-28 md:mb-28">
+        <div class="grid items-center gap-10 lg:grid-cols-5">
+          <div class="lg:col-span-3">
+            <p class="mb-4 text-sm uppercase tracking-[0.2em] text-primary">SOFTWARE DEVELOPER</p>
+            <h1 class="max-w-3xl text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
+              Aspiring software engineer passionate about AI, deep learning, and impactful web solutions.
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg text-zinc-300">
+              Strong foundation in C and Python with hands-on project experience in deep learning, backend systems,
+              and responsive web interfaces. Skilled in problem-solving, data structures, and clean software design.
+            </p>
+            <div class="mt-10 flex flex-wrap gap-4">
+              <a href="#projects" class="btn-primary rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:shadow-glow">
+                View Projects
+              </a>
+              <a href="#contact" class="btn-ghost rounded-lg border border-border px-5 py-3 text-sm font-semibold text-zinc-200 transition hover:border-primary hover:text-white">
+                Contact Me
+              </a>
+            </div>
+            <div class="mt-10 flex items-center gap-5 text-zinc-400">
+              <a class="social-link" href="https://github.com/tvathu" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="social-link" href="https://www.linkedin.com/in/tvathul/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="social-link" href="mailto:tvathul2004@gmail.com">Email</a>
+            </div>
+          </div>
+          <div class="lg:col-span-2">
+            <figure class="profile-frame card mx-auto w-full max-w-sm p-4">
+              <div class="profile-image-wrap relative overflow-hidden rounded-2xl border border-border bg-zinc-900/80">
+                <img
+                  src="./assets/athul.jpg"
+                  alt="Portrait of Athul T V"
+                  class="profile-image h-[420px] w-full object-cover object-top"
+                />
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                  <p class="text-base font-semibold text-white">Athul T V</p>
+                  <p class="text-xs tracking-wide text-zinc-300">Software Engineer | AI Enthusiast</p>
+                </div>
+              </div>
+              <figcaption class="mt-3 text-center text-xs text-zinc-400">
+               Open to internships and collaborative projects.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="reveal mb-20 scroll-mt-28 md:mb-24">
+        <h2 class="section-heading">About</h2>
+        <div class="mt-6 grid gap-6 md:grid-cols-5">
+          <p class="md:col-span-3 text-zinc-300 leading-relaxed">
+            B.Tech in Computer Science and Engineering at SCMS School of Engineering and Technology (CGPA: 7.34,
+            Graduation: 2026). I am recognized for empathy, active listening, and teamwork, and I am seeking
+            opportunities to contribute to forward-thinking technology products.
+          </p>
+          <div class="card md:col-span-2">
+            <p class="text-sm text-zinc-400">Profile Snapshot</p>
+            <ul class="mt-3 space-y-2 text-sm text-zinc-200">
+              <li>Name: Athul T V</li>
+              <li>Degree: B.Tech CSE</li>
+              <li>College: SCMS School of Engineering and Technology</li>
+              <li>CGPA: 7.34</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="reveal mb-20 scroll-mt-28 md:mb-24">
+        <h2 class="section-heading">Skills</h2>
+        <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="card">C / Java / Python</div>
+          <div class="card">Node.js Libraries / React</div>
+          <div class="card">SQL / Relational Databases (MySQL)</div>
+          <div class="card">AWS / Cloud Fundamentals</div>
+          <div class="card">Data Structures & Algorithms</div>
+          <div class="card">Object-Oriented Programming</div>
+          <div class="card">Web Design and Development</div>
+          <div class="card">Git / VSCode / GitHub</div>
+        </div>
+      </section>
+
+      <section id="projects" class="reveal mb-20 scroll-mt-28 md:mb-24">
+        <div class="flex items-end justify-between gap-4">
+          <h2 class="section-heading">Projects</h2>
+          <a href="https://github.com/tvathu" target="_blank" rel="noreferrer" class="text-sm text-primary hover:text-primary/80">See all on GitHub</a>
+        </div>
+        <div class="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <article class="project-card">
+            <h3 class="text-lg font-semibold text-white">OTT/OTT Revenue Prediction System</h3>
+            <p class="mt-2 text-sm text-zinc-300">Deep learning based model to predict OTT content revenue from content and engagement data.</p>
+            <p class="mt-3 text-xs text-zinc-400">Python · Deep Learning · Data Pipelines</p>
+          </article>
+          <article class="project-card">
+            <h3 class="text-lg font-semibold text-white">Alzheimer's Assistant System</h3>
+            <p class="mt-2 text-sm text-zinc-300">AI healthcare support platform with image recognition, object detection, OCR, and text-to-speech.</p>
+            <p class="mt-3 text-xs text-zinc-400">Django · REST APIs · YOLO · OCR</p>
+          </article>
+          
+        </div>
+      </section>
+
+      <section id="experience" class="reveal mb-20 scroll-mt-28 md:mb-24">
+        <h2 class="section-heading">Experience & Certifications</h2>
+        <div class="mt-6 space-y-5">
+          <article class="card">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-lg font-semibold text-white">AWS Internship Program · IIIT Kottayam</h3>
+              <span class="text-sm text-zinc-400">Apr - May 2023</span>
+            </div>
+            <p class="mt-3 text-sm leading-relaxed text-zinc-300">
+              Participated in hands-on sessions on AWS cloud architecture and services and developed an application using core AWS services.
+            </p>
+          </article>
+          <article class="card">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-lg font-semibold text-white">Machine Learning and AI Certification · ICT Academy of Kerala</h3>
+              <span class="text-sm text-zinc-400">Oct - Nov 2024</span>
+            </div>
+            <p class="mt-3 text-sm leading-relaxed text-zinc-300">
+              Explored concepts like supervised and unsupervised learning, regression and classification, and implemented basic ML models.
+            </p>
+          </article>
+          <article class="card">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-lg font-semibold text-white">Learning Full Stack React · Infosys</h3>
+              <span class="text-sm text-zinc-400">Apr 2026</span>
+            </div>
+            <p class="mt-3 text-sm leading-relaxed text-zinc-300">
+              Completed full stack development training with React, including modern UI design and frontend-backend integration.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="reveal scroll-mt-28">
+        <h2 class="section-heading">Contact</h2>
+        <div class="mt-6 grid gap-6 md:grid-cols-5">
+          <div class="md:col-span-3">
+            <p class="text-zinc-300">
+              Interested in collaborating or discussing opportunities? Reach out through email, phone, or social platforms.
+            </p>
+            <a href="mailto:tvathul2004@gmail.com" class="mt-4 inline-block text-primary hover:text-primary/80">
+              tvathul2004@gmail.com
+            </a>
+            <p class="mt-2 text-sm text-zinc-400">+91-8304944296</p>
+          </div>
+          <div class="card md:col-span-2">
+            <p class="text-sm text-zinc-400">Connect</p>
+            <div class="mt-3 flex flex-wrap gap-3 text-sm">
+              <a class="social-chip" href="https://github.com/tvathu" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="social-chip" href="https://linkedin.com/in/tvathul" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="social-chip" href="mailto:tvathul2004@gmail.com">Email</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-border py-6">
+      <p class="mx-auto max-w-6xl px-4 text-sm text-zinc-500 sm:px-6 lg:px-8">
+        © <span id="year"></span> Athul T V. Built with HTML, Tailwind CSS, and JavaScript.
+      </p>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
